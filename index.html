@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,21 @@
 	<link rel="stylesheet" href="css/styles.css">
 	<title>Juanito</title>
 </head>
+
 <body>
 	<div class="content">
 		<!---Menu-->
 		<div class="navv">
 			<html>
-				<input type="button" value="Profil" onClick="document.getElementById('profil').scrollIntoView();" />
-				<input type="button" value="Informations" onClick="document.getElementById('informations').scrollIntoView();" />
-				<input type="button" value="Parcours" onClick="document.getElementById('parcours').scrollIntoView();" />
-				<input type="button" value="Compétences" onClick="document.getElementById('competences').scrollIntoView();" />
-				<input type="button" value="Projets" onClick="document.getElementById('projets').scrollIntoView();" />
-				<input type="button" value="Contact" onClick="document.getElementById('projets').scrollIntoView();" />
+			<input type="button" value="Profil" onClick="document.getElementById('profil').scrollIntoView();" />
+			<input type="button" value="Informations"
+				onClick="document.getElementById('informations').scrollIntoView();" />
+			<input type="button" value="Parcours" onClick="document.getElementById('parcours').scrollIntoView();" />
+			<input type="button" value="Compétences"
+				onClick="document.getElementById('competences').scrollIntoView();" />
+			<input type="button" value="Projets" onClick="document.getElementById('projets').scrollIntoView();" />
+			<input type="button" value="Contact" onClick="document.getElementById('contact').scrollIntoView();" />
+
 			</html>
 		</div>
 		<!---Profil-->
@@ -33,25 +38,25 @@
 				<div id="competences-list">
 					<div class="competence">
 						<a href="mailto:contact@juanito.pro">
-						<img class="competences-img" src="img/email.png">
+							<img class="competences-img" src="img/icons8-courriel-ouvert-50.png">
 						</a>
 						<h2>contact@juanito.pro</h2>
 					</div>
 					<div class="competence">
 						<a href="https://www.linkedin.com/in/jean-houlez">
-						<img class="competences-img" src="img/icons8-linkedin-50.png">
+							<img class="competences-img" src="img/icons8-linkedin-50.png">
 						</a>
 						<h2><a href="https://github.com/JuanitoFr">jean-houlez</a></h2>
 					</div>
 					<div class="competence">
 						<a href="https://github.com/JuanitoFr">
-						<img class="competences-img" src="img/icons8-github-50.png">
+							<img class="competences-img" src="img/icons8-github-50.png">
 						</a>
 						<h2><a href="https://github.com/JuanitoFr">JuanitoFr</a></h2>
 					</div>
 					<div class="competence">
 						<a href="/files/CV HOULEZ JEAN.pdf">
-						<img class="competences-img" src="img/icons8-coller-depuis-le-presse-papier-50.png">
+							<img class="competences-img" src="img/icons8-coller-depuis-le-presse-papier-50.png">
 						</a>
 						<h2><a href="/files/CV HOULEZ JEAN.pdf">CV</a></h2>
 					</div>
@@ -64,12 +69,12 @@
 					<div id="parcours-list">
 						<div>
 							<img class="parcours-img" src="img/jm.png">
-							<h3>BAC STI2D au lycée Jean Moulin - Langon</h3>
+							<h3>BAC STI2D - Langon</h3>
 							<h5>2018-2020</h5>
 						</div>
 						<div>
 							<img class="parcours-img" src="img/ff.png">
-							<h3>DUT Informatique à l'IUT de Bordeaux</h3>
+							<h3>DUT Informatique - Bordeaux</h3>
 							<h5>2020-2022</h5>
 						</div>
 					</div>
@@ -111,10 +116,6 @@
 							<h3>C#</h3>
 						</div>
 						<div class="competence">
-							<img class="competences-img" src="img/python.png">
-							<h3>Python</h3>
-						</div>
-						<div class="competence">
 							<img class="competences-img" src="img/git.png">
 							<h3>Git</h3>
 						</div>
@@ -122,128 +123,156 @@
 				</section>
 			</div>
 			<!---Juanitor-->
-			<section id="projets" class="cv-projets">
-				<section class="cv-section" id="projets-t">
-					<img src="img/logo225.png" class="projet-logo">
-					<h1>Juanitor - Gestion automatique d'actif</h1>
-					<ul class="apps">
-						<li>
-							<p>Application web react avec Backend js & Java permettant d'automatiser l'achat et la vente de
-								crypto-monnaies
-								via la plateforme Binance, à l'aide d'une base de donnée MariaDB.
-							</p>
-							<img class="screenshot" src="img/img1.png">
-							<div class="app-spec">
-								<div class="app-language">
-									<p>Langages:</p>
-									<div class="competences-img">
-										<img class="competences-img" src="img/js.png">
-										<span class="tooltiptext">Javascript</span>
+		</div>
+		<div class="slider-container" id="projets">
+			<div class="slider">
+				<div class="slides">
+					<div id="slide1" class="slide">
+						<h1 class="slide__text">Mes projets</span>
+						<p>Personnels / Scolaires</p>
+						<a class="slide__prev" href="#slide4" title="Next"></a>
+						<a class="slide__next" href="#slide2" title="Next"></a>
+					</div>
+					<div id="slide2" class="slide">
+						<section class="cv-section" id="projets-t">
+							<img src="img/logo225.png" class="projet-logo">
+							<h1>Juanitor - Gestion automatique d'actif</h1>
+							<ul class="apps">
+								<li>
+									<p>Application web react avec Backend js & Java permettant d'automatiser l'achat et
+										la vente de
+										crypto-monnaies
+										via la plateforme Binance, à l'aide d'une base de donnée MariaDB.
+									</p>
+									<div class="app-spec">
+										<div class="app-language">
+											<p>Langages:</p>
+											<div class="competences-img">
+												<img class="competences-img" src="img/js.png">
+												<span class="tooltiptext">Javascript</span>
+											</div>
+											<div class="competences-img">
+												<img class="competences-img" src="img/html.png">
+												<span class="tooltiptext">HTML</span>
+											</div>
+											<div class="competences-img">
+												<img class="competences-img" src="img/css.png">
+												<span class="tooltiptext">css</span>
+											</div>
+											<div class="competences-img">
+												<img class="competences-img" src="img/java.png">
+												<span class="tooltiptext">Java</span>
+											</div>
+										</div>
+										<div class="app-frameworks"="app-language">
+											<p>Frameworks:</p>
+											<div class="competences-img">
+												<img class="competences-img" src="img/sequelize.png">
+												<span class="tooltiptext">Sequelize</span>
+											</div>
+											<div class="competences-img">
+												<img class="competences-img" src="img/react.png">
+												<span class="tooltiptext">React</span>
+											</div>
+											<div class="competences-img">
+												<img class="competences-img" src="img/maven.png">
+												<span class="tooltiptext">Maven</span>
+											</div>
+										</div>
 									</div>
-									<div class="competences-img">
-										<img class="competences-img" src="img/html.png">
-										<span class="tooltiptext">HTML</span>
+								</li>
+								<p class="app-text">Images:</p>
+								<img class="screenshot" src="img/4.png">
+								<img class="screenshot" src="img/1.png">
+								<img class="screenshot" src="img/2.png">
+								<img class="screenshot" src="img/3.png">
+								<a href="http://app.juanito.pro">Démo ici</a>
+
+							</ul>
+						</section>
+						<a class="slide__prev" href="#slide1" title="Prev"></a>
+						<a class="slide__next" href="#slide3" title="Next"></a>
+					</div>
+					<div id="slide3" class="slide">
+						<section class="cv-section" id="projets-t">
+							<img src="img/music.png" class="projet-logo">
+							<h1>Paquito - Gestion et téléchargement de musique</h1>
+							<ul class="apps">
+								<li>
+									<p>Application Java permettant d'écouter des fichiers audio et de télécharger des musiques depuis youtube afin de créer des playlist. </p>
+									<div class="app-spec">
+										<div class="app-language">
+											<p>Langages:</p>
+											<div class="competences-img">
+												<img class="competences-img" src="img/java.png">
+												<span class="tooltiptext">Java</span>
+											</div>
+										</div>
+										<div class="app-frameworks"="app-language">
+											<p>Frameworks:</p>
+											<div class="competences-img">
+												<img class="competences-img" src="img/maven.png">
+												<span class="tooltiptext">Maven</span>
+											</div>
+											<div class="competences-img">
+												<img class="competences-img" src="img/JavaFX.png">
+												<span class="tooltiptext">JavaFX</span>
+											</div>
+										</div>
 									</div>
-									<div class="competences-img">
-										<img class="competences-img" src="img/css.png">
-										<span class="tooltiptext">css</span>
+								</li>
+								<p class="app-text">Images:</p>
+								<img class="screenshot" src="img/5.png">
+								<img class="screenshot" src="img/6.png">
+								<img class="screenshot" src="img/7.png">
+							</ul>
+						</section>
+						<a class="slide__prev" href="#slide2" title="Prev"></a>
+						<a class="slide__next" href="#slide4" title="Next"></a>
+					</div>
+					<div id="slide4" class="slide">
+						<section class="cv-section" id="projets-t">
+							<img src="img/Sokoban_ani.gif" class="projet-logo">
+							<h1>Gomoku - Jeu de plateau en Java</h1>
+							<ul class="apps">
+								<li>
+									<p>Jeu de plateau en Java, le but de ce jeu de logique est de réussir à pousser les caisses jusqu'aux joyaux qui représentent les emplacements où vous devez les laisser. Si les premiers niveaux peuvent paraître d'une facilité enfantine, vous allez vite déchanter et devoir y réfléchir à deux fois avant de faire le moindre mouvement.</p>
+									<div class="app-spec">
+										<div class="app-language">
+											<p>Langages:</p>
+											<div class="competences-img">
+												<img class="competences-img" src="img/java.png">
+												<span class="tooltiptext">Java</span>
+											</div>
+										</div>
+										<div class="app-frameworks"="app-language">
+											<p>Frameworks:</p>
+											<div class="competences-img">
+												<img class="competences-img" src="img/maven.png">
+												<span class="tooltiptext">Maven</span>
+											</div>
+											<div class="competences-img">
+												<img class="competences-img" src="img/JavaFX.png">
+												<span class="tooltiptext">JavaFX</span>
+											</div>
+										</div>
 									</div>
-									<div class="competences-img">
-										<img class="competences-img" src="img/java.png">
-										<span class="tooltiptext">Java</span>
-									</div>
-								</div>
-								<div class="app-frameworks"="app-language">
-									<p>Frameworks:</p>
-									<div class="competences-img">
-										<img class="competences-img" src="img/sequelize.png">
-										<span class="tooltiptext">Sequelize</span>
-									</div>
-									<div class="competences-img">
-										<img class="competences-img" src="img/react.png">
-										<span class="tooltiptext">React</span>
-									</div>
-									<div class="competences-img">
-										<img class="competences-img" src="img/maven.png">
-										<span class="tooltiptext">Maven</span>
-									</div>
-								</div>
-							</div>
-						</li>
-						<p class="app-text">Images:</p>
-						<img class="screenshot" src="img/4.png">
-						<img class="screenshot" src="img/1.png">
-						<img class="screenshot" src="img/2.png">
-						<img class="screenshot" src="img/3.png">
-					</ul>
-			</section>
-			<!---Paquito-->
-			<section class="cv-section" id="projets-t">
-				<img src="img/music.png" class="projet-logo">
-				<h1>Paquito - Gestion et téléchargement de musique</h1>
-				<ul class="apps">
-					<li>
-						<p>Application Java permettant d'écouter des fichiers audio et de télécharger des musiques depuis youtube afin de créer des playlist. </p>
-						<div class="app-spec">
-							<div class="app-language">
-								<p>Langages:</p>
-								<div class="competences-img">
-									<img class="competences-img" src="img/java.png">
-									<span class="tooltiptext">Java</span>
-								</div>
-							</div>
-							<div class="app-frameworks"="app-language">
-								<p>Frameworks:</p>
-								<div class="competences-img">
-									<img class="competences-img" src="img/maven.png">
-									<span class="tooltiptext">Maven</span>
-								</div>
-								<div class="competences-img">
-									<img class="competences-img" src="img/JavaFX.png">
-									<span class="tooltiptext">JavaFX</span>
-								</div>
-							</div>
-						</div>
-					</li>
-					<p class="app-text">Images:</p>
-					<img class="screenshot" src="img/5.png">
-					<img class="screenshot" src="img/6.png">
-					<img class="screenshot" src="img/7.png">
-				</ul>
-			</section>
-			<!---Gomoku-->
-			<section class="cv-section" id="projets-t">
-				<img src="img/Sokoban_ani.gif" class="projet-logo">
-				<h1>Gomoku - Jeu de plateau en Java</h1>
-				<ul class="apps">
-					<li>
-						<p>Jeu de plateau en Java, le but de ce jeu de logique est de réussir à pousser les caisses jusqu'aux joyaux qui représentent les emplacements où vous devez les laisser. Si les premiers niveaux peuvent paraître d'une facilité enfantine, vous allez vite déchanter et devoir y réfléchir à deux fois avant de faire le moindre mouvement.</p>
-						<div class="app-spec">
-							<div class="app-language">
-								<p>Langages:</p>
-								<div class="competences-img">
-									<img class="competences-img" src="img/java.png">
-									<span class="tooltiptext">Java</span>
-								</div>
-							</div>
-							<div class="app-frameworks"="app-language">
-								<p>Frameworks:</p>
-								<div class="competences-img">
-									<img class="competences-img" src="img/maven.png">
-									<span class="tooltiptext">Maven</span>
-								</div>
-								<div class="competences-img">
-									<img class="competences-img" src="img/JavaFX.png">
-									<span class="tooltiptext">JavaFX</span>
-								</div>
-							</div>
-						</div>
-					</li>
-					<p class="app-text">Images:</p>
-					<img class="screenshot" src="img/10.PNG">
-				</ul>
-			</section>
-		</section>
+								</li>
+								<p class="app-text">Images:</p>
+								<img class="screenshot" src="img/10.PNG">
+							</ul>
+						</section>
+						<a class="slide__prev" href="#slide3" title="Prev"></a>
+						<a class="slide__next" href="#slide4" title="Next"></a>
+					</div>
+				</div>
+				<div class="slider__nav">
+					<a class="slider__navlink" href="#slide1"></a>
+					<a class="slider__navlink" href="#slide2"></a>
+					<a class="slider__navlink" href="#slide3"></a>
+					<a class="slider__navlink" href="#slide4"></a>
+				</div>
+			</div>
 		</div>
 		<!---Contact-->
 		<section class="cv-section" id="contact">
@@ -268,4 +297,5 @@
 		</div>
 	</footer>
 </body>
+
 </html>

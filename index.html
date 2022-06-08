@@ -4,8 +4,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/navbar.css">
+	
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="icon" href="/img//image_profil.jpg">
+
 	<title>Juanito</title>
 </head>
 
@@ -17,10 +19,10 @@
 			<input type="button" value="Profil" onClick="document.getElementById('profil').scrollIntoView();" />
 			<input type="button" value="Informations"
 				onClick="document.getElementById('informations').scrollIntoView();" />
-			<input type="button" value="Parcours" onClick="document.getElementById('parcours').scrollIntoView();" />
+			<input type="button" value="Parcours" onClick="document.getElementById('parcours-competences-dir').scrollIntoView();" />
 			<input type="button" value="Compétences"
-				onClick="document.getElementById('competences').scrollIntoView();" />
-			<input type="button" value="Projets" onClick="document.getElementById('projets').scrollIntoView();" />
+				onClick="document.getElementById('parcours-competences-dir').scrollIntoView();" />
+			<input type="button" value="Projets" onClick="document.getElementById('projects-dir').scrollIntoView();" />
 			<input type="button" value="Contact" onClick="document.getElementById('contact').scrollIntoView();" />
 
 			</html>
@@ -55,14 +57,15 @@
 						<h2><a href="https://github.com/JuanitoFr">JuanitoFr</a></h2>
 					</div>
 					<div class="competence">
-						<a href="/files/CV HOULEZ JEAN.pdf">
+						<a href="/files/CV_JeanHoulez_Mai2022.pdf">
 							<img class="competences-img" src="img/icons8-coller-depuis-le-presse-papier-50.png">
 						</a>
-						<h2><a href="/files/CV HOULEZ JEAN.pdf">CV</a></h2>
+						<h2><a href="/files/CV_JeanHoulez_Mai2022.pdf">CV</a></h2>
 					</div>
 				</div>
 			</section>
 			<!---Parcours-->
+			<div id="parcours-competences-dir"></div>
 			<div class="container-c">
 				<section id="parcours" class="cv-section">
 					<p class="sTitle">Parcours</p>
@@ -124,16 +127,9 @@
 			</div>
 			<!---Juanitor-->
 		</div>
+		<div id="projects-dir"></div>
 		<div class="slider-container" id="projets">
-			<div class="slider">
-				<div class="slides">
-					<div id="slide1" class="slide">
-						<h1 class="slide__text">Mes projets</span>
-						<p>Personnels / Scolaires</p>
-						<a class="slide__prev" href="#slide4" title="Next"></a>
-						<a class="slide__next" href="#slide2" title="Next"></a>
-					</div>
-					<div id="slide2" class="slide">
+
 						<section class="cv-section" id="projets-t">
 							<img src="img/logo225.png" class="projet-logo">
 							<h1>Juanitor - Gestion automatique d'actif</h1>
@@ -146,26 +142,34 @@
 									</p>
 									<div class="app-spec">
 										<div class="app-language">
-											<p>Langages:</p>
-											<div class="competences-img">
-												<img class="competences-img" src="img/js.png">
-												<span class="tooltiptext">Javascript</span>
+											<div class="title">
+												<p>Langages:</p>
 											</div>
-											<div class="competences-img">
-												<img class="competences-img" src="img/html.png">
-												<span class="tooltiptext">HTML</span>
+											<div class="content">
+												<div class="competences-img">
+													<img class="competences-img" src="img/js.png">
+													<span class="tooltiptext">Javascript</span>
+												</div>
+												<div class="competences-img">
+													<img class="competences-img" src="img/html.png">
+													<span class="tooltiptext">HTML</span>
+												</div>
+												<div class="competences-img">
+													<img class="competences-img" src="img/css.png">
+													<span class="tooltiptext">css</span>
+												</div>
+												<div class="competences-img">
+													<img class="competences-img" src="img/java.png">
+													<span class="tooltiptext">Java</span>
+												</div>
 											</div>
-											<div class="competences-img">
-												<img class="competences-img" src="img/css.png">
-												<span class="tooltiptext">css</span>
-											</div>
-											<div class="competences-img">
-												<img class="competences-img" src="img/java.png">
-												<span class="tooltiptext">Java</span>
-											</div>
+											
 										</div>
 										<div class="app-frameworks"="app-language">
-											<p>Frameworks:</p>
+											<div class="title">
+												<p>Frameworks:</p>
+											</div>
+											<div class="content">
 											<div class="competences-img">
 												<img class="competences-img" src="img/sequelize.png">
 												<span class="tooltiptext">Sequelize</span>
@@ -178,6 +182,19 @@
 												<img class="competences-img" src="img/maven.png">
 												<span class="tooltiptext">Maven</span>
 											</div>
+											</div>
+										</div>
+										<div class="app-utils">
+											<div class="title">
+												<p>Outils:</p>
+											</div>
+											<div class="content">
+												<div class="competences-img">
+													<img class="competences-img" src="img/git.png">
+													<span class="tooltiptext">Git</span>
+												</div>
+											</div>
+											
 										</div>
 									</div>
 								</li>
@@ -190,10 +207,7 @@
 
 							</ul>
 						</section>
-						<a class="slide__prev" href="#slide1" title="Prev"></a>
-						<a class="slide__next" href="#slide3" title="Next"></a>
-					</div>
-					<div id="slide3" class="slide">
+	
 						<section class="cv-section" id="projets-t">
 							<img src="img/music.png" class="projet-logo">
 							<h1>Paquito - Gestion et téléchargement de musique</h1>
@@ -219,6 +233,18 @@
 												<span class="tooltiptext">JavaFX</span>
 											</div>
 										</div>
+										<div class="app-utils">
+											<div class="title">
+												<p>Outils:</p>
+											</div>
+											<div class="content">
+												<div class="competences-img">
+													<img class="competences-img" src="img/git.png">
+													<span class="tooltiptext">Git</span>
+												</div>
+											</div>
+											
+										</div>
 									</div>
 								</li>
 								<p class="app-text">Images:</p>
@@ -227,10 +253,6 @@
 								<img class="screenshot" src="img/7.png">
 							</ul>
 						</section>
-						<a class="slide__prev" href="#slide2" title="Prev"></a>
-						<a class="slide__next" href="#slide4" title="Next"></a>
-					</div>
-					<div id="slide4" class="slide">
 						<section class="cv-section" id="projets-t">
 							<img src="img/Sokoban_ani.gif" class="projet-logo">
 							<h1>Gomoku - Jeu de plateau en Java</h1>
@@ -256,21 +278,26 @@
 												<span class="tooltiptext">JavaFX</span>
 											</div>
 										</div>
+										<div class="app-utils">
+											<div class="title">
+												<p>Outils:</p>
+											</div>
+											<div class="content">
+												<div class="competences-img">
+													<img class="competences-img" src="img/git.png">
+													<span class="tooltiptext">Git</span>
+												</div>
+											</div>
+											
+										</div>
 									</div>
 								</li>
 								<p class="app-text">Images:</p>
 								<img class="screenshot" src="img/10.PNG">
 							</ul>
 						</section>
-						<a class="slide__prev" href="#slide3" title="Prev"></a>
-						<a class="slide__next" href="#slide4" title="Next"></a>
+						
 					</div>
-				</div>
-				<div class="slider__nav">
-					<a class="slider__navlink" href="#slide1"></a>
-					<a class="slider__navlink" href="#slide2"></a>
-					<a class="slider__navlink" href="#slide3"></a>
-					<a class="slider__navlink" href="#slide4"></a>
 				</div>
 			</div>
 		</div>
